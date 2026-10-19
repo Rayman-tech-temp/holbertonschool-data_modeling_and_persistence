@@ -4,5 +4,6 @@ CREATE TABLE books (
 	price real NOT NULL,
 	stock int NOT NULL,
 	author varchar(128),
-	genre varchar(124)
+	genre varchar(124),
+	published_year int NOT NULL
 );
