@@ -1,4 +1,4 @@
-SELECT title, author
+SELECT title, name
 FROM books
 INNER JOIN authors
-ON books.author_id = author.id;
+ON books.author_id = authors.id;
