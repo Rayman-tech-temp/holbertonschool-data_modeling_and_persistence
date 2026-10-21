@@ -1,5 +1,5 @@
 SELECT students.name, courses.title
 FROM courses
-INNER JOIN students ON student_id = students.id 
-INNER JOIN enrolments ON course_id = courses.id 
-ORDER BY students.name, courses.title;
+LEFT JOIN students ON student_id = students.id 
+LEFT JOIN enrolments ON course_id = courses.id 
+ORDER BY courses.title, students.name;
