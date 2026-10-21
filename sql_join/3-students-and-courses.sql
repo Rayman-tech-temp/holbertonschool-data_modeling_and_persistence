@@ -2,4 +2,5 @@ SELECT students.name, courses.title
 FROM courses
 LEFT JOIN students ON student_id = students.id 
 LEFT JOIN enrolments ON course_id = courses.id 
-ORDER BY courses.title, students.name;
+GROUP BY courses.title
+ORDER BY students.name;
