@@ -1,4 +1,3 @@
 SELECT courses.title, COUNT(registrations.student_id) AS number_of_registrations FROM registrations
 LEFT JOIN courses ON registrations.course_id = courses.id
-GROUP BY courses.title
-ORDER BY number_of_registrations;
+GROUP BY courses.title DESC;
